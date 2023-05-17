@@ -37,7 +37,7 @@ const relogio = setInterval(function time() {
     } else if (hr >= 20 && hr < 22) {
         body.classList.add("night");
     } else {
-        body.classList.add("-late-night");
+        body.classList.add("late-night");
     }
 }, 1000)
 
