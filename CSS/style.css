@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #12c2e9, #c471ed, #f7797d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 3s ease;
+}
+
+.Relógio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
+
+.Relógio div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(5, 5, 5, 0.9);
+    box-shadow: rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.Relógio span {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.Relógio span.tempo {
+    font-size: 10px;
+}
+
+body.early-morning {
+    background: linear-gradient(120deg, #fceabb, #f8b500);
+    transition: background-color 3s ease;
+}
+
+body.morning {
+    background: linear-gradient(120deg, #ff5f6d, #ffc371);
+    transition: background-color 3s ease;
+}
+
+body.late-morning {
+    background: linear-gradient(120deg, #ffb347, #ffcc33);
+    transition: background-color 3s ease;
+}
+
+body.early-afternoon {
+    background: linear-gradient(120deg, #fe8c00, #f83600);
+    transition: background-color 3s ease;
+}
+
+body.afternoon {
+    background: linear-gradient(120deg, #833ab4, #fd1d1d, #fcb045);
+    transition: background-color 3s ease;
+}
+
+body.late-afternoon {
+    background: linear-gradient(120deg, #ff00cc, #333399);
+    transition: background-color 3s ease;
+}
+
+body.early-night {
+    background: linear-gradient(120deg, #23074d, #cc5333);
+    transition: background-color 3s ease;
+}
+
+body.night {
+    background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+    transition: background-color 3s ease;
+}
+
+body.late-night {
+    background: linear-gradient(120deg, #000000, #434343);
+    transition: background-color 3s ease;
+}
+
+@media (max-width: 768px) {
+    .Relógio {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 550px;
+        width: 200px;
+    }
+
+    .Relógio div {
+        margin-bottom: 10px;
+    }
+}
